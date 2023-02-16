@@ -17,8 +17,9 @@ jobs:
     - name: lint code
       run: 
         flake8 --ignore=E501,E231 *.py 
-    - name: pylinter
-      uses: programmingwithalex/pylinter@v1.4.3
+    - name: Python Pylint Github Action
+      uses: fylein/python-pylint-github-action@v4
+
 
 
     - name: Run unit tests
